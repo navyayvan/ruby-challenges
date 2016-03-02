@@ -16,7 +16,7 @@
 # yes
 # Thank you!
 
-print "What would you like to do: "
+print "What would you like to do: deposit, withdraw, show balance? "
 action = gets.chomp
 balance = 3000
 
@@ -35,7 +35,6 @@ def show_balance
 	puts balance 
 end 
 
-
 if action === "deposit"
 	print "How much do you want to deposit?"
 	dep = gets.chomp
@@ -44,6 +43,8 @@ elsif action == "withdraw"
 	print "How much do you want to withdraw?"
 	with = gets.chomp
 	puts withdraw(with)
-else
+elsif action == "show balance"
 	show_balance
 end 
+
+#why don't the methods recognize variables outside of the method? how do you not hardcode the balance values?
